@@ -1,19 +1,27 @@
-document.querySelector(".one").addEventListener("click", function(){
+// Index Page (Start)
+
+function goAbout(){
   window.location = "about.html";
-});
+}
 
-document.querySelector(".two").addEventListener("click", function(){
-  window.location = "link";
-});
+function goEd(){
+  window.location = "";
+}
 
-document.querySelector(".three").addEventListener("click", function(){
-  window.location = "link";
-});
+function goExp(){
+  window.location = "";
+}
 
-document.querySelector(".four").addEventListener("click", function(){
-  window.location = "link";
-});
+function goSkills(){
+  window.location = "";
+}
 
-document.querySelector(".five").addEventListener("click", function(){
-  window.location = "link";
-});
+function goInt(){
+  window.location = "";
+}
+
+// Index Page (End)
+
+function goHome(){
+  window.location = "index.html";
+}

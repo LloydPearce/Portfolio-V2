@@ -164,7 +164,7 @@ nav{
   margin-left: 10%;
   width: 80%;
   height: 20%;
-  background-color: red;
+  /* background-color: red; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -194,8 +194,10 @@ nav{
   Link : https://codepen.io/giana/pen/xdXpJB */
 
 .draw-border {
-  box-shadow: inset 0 0 0 4px #58afd1;
-  color: #58afd1;
+  /* Border color before hover */
+  box-shadow: inset 0 0 0 4px #0086a8;
+  /* Text Color */
+  color: black;
   -webkit-transition: color 0.25s 0.0833333333s;
   transition: color 0.25s 0.0833333333s;
   position: relative;
@@ -220,10 +222,12 @@ nav{
   border-right-width: 4px;
 }
 .draw-border:hover {
-  color: #ffe593;
+  /* Color After hover */
+  color: white;
 }
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #ffe593;
+  /* Border Color after hover*/
+  border-color: black;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -239,7 +243,8 @@ nav{
 }
 
 .btn {
-  background: black;
+  margin-top: 5%;
+  background: #0097bd;
   border: none;
   cursor: pointer;
   line-height: 1.5;
