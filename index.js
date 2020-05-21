@@ -5,7 +5,7 @@ function goAbout(){
 }
 
 function goEd(){
-  window.location = "";
+  window.location = "education.html";
 }
 
 function goExp(){
