@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /*
 Image Links :
@@ -13,8 +14,10 @@ longwave : https://carolineashwood.co.uk/products/catch-the-wavesoriginal-abstra
 
 
 body{
-  margin: 0;
+  height:100%;
+  margin: 0px;
   margin-bottom: 10%;
+
 }
 
 button{
@@ -27,6 +30,8 @@ button{
   padding-top: 5%;
   flex : 1 1 80%;
   height: 100vh;
+  margin-bottom: 20%;
+  opacity: 0;
 }
 
 .unselectable {
@@ -144,6 +149,7 @@ nav{
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .nav-links{
@@ -163,11 +169,12 @@ nav{
 }
 
 .who-section{
+  opacity: 0;
   text-align: center;
   margin-top: 5%;
-  margin-right:10%;
-  margin-left: 10%;
-  width: 80%;
+  margin-right:15%;
+  margin-left: 15%;
+  width: 70%;
   height: 20%;
   /* background-color: red; */
   font-family: 'Open Sans', sans-serif;
@@ -278,6 +285,11 @@ Link : https://codepen.io/itbruno/pen/KwarLp */
 
 
 @import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+.timeline-content{
+  font-family: 'Raleway', sans-serif;
+}
+
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
   content: '';
   display: block;
@@ -291,9 +303,6 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
   -moz-box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
 
 img {
   max-width: 100%;
@@ -359,7 +368,7 @@ header .social .btn {
 #timeline:before {
   content: "";
   width: 3px;
-  height: 100%;
+  height: 70%;
   /* TimeLine Middle Line */
   background: #008bc2;
   left: 50%;
@@ -506,3 +515,7 @@ header .social .btn {
 
 
 /* Imported Timeline (End) */
+
+.main{
+  opacity: 0;
+}

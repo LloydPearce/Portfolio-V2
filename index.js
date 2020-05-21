@@ -25,3 +25,10 @@ function goInt(){
 function goHome(){
   window.location = "index.html";
 }
+
+
+$(".main-content").delay(800).animate({"opacity": "1"}, 700);
+
+$(".who-section").delay(800).animate({"opacity": "1"}, 700);
+
+$(".main").delay(800).animate({"opacity": "1"}, 700);
