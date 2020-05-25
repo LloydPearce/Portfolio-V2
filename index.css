@@ -102,12 +102,13 @@ button{
 .exp-showcase{
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows:repeat(1, 200px);
-  grid-gap: 3%;
+  grid-auto-rows:minmax(200px, auto);
+  grid-gap: 20px;
   max-width: 65%;
   margin: 0 auto;
-  margin-top: 1%;
   position: relative;
+  grid-template-areas:
+  "ore steam hw discord github";
 }
 
 .exp-showcase-title{
@@ -133,8 +134,10 @@ button{
 }
 
 .exp1{
+  grid-area:ore;
   background-image: url("images/vn.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
   transition: all ease-in-out 450ms;
@@ -146,6 +149,7 @@ button{
 }
 
 .exp2{
+  grid-area:steam;
   background-image: url("images/steamvr.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -160,6 +164,7 @@ button{
 }
 
 .exp3{
+  grid-area:hw;
   background-image: url("images/hwhelp.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -174,8 +179,10 @@ button{
 }
 
 .exp4{
+  grid-area:discord;
   background-image: url("images/discord.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
   transition: all ease-in-out 450ms;
@@ -187,8 +194,10 @@ button{
 }
 
 .exp5{
+  grid-area:github;
   background-image: url("images/github.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
   transition: all ease-in-out 450ms;
@@ -805,13 +814,23 @@ header .social .btn {
 /* Override Everything for responsive */
 
 @media only screen and (max-width:1000px){
+
+  .exp-showcase{
+    grid-template-areas:
+    "ore ore ore ore ore"
+    "steam steam steam steam steam"
+    "hw hw hw hw hw"
+    "discord discord discord discord discord"
+    "github github github github github";
+  }
+
   .portfolio{
     grid-template-areas:
     "abt abt abt abt abt abt"
     "ed ed ed ed ed ed"
     "skill skill skill skill skill skill"
     "exp exp exp exp exp exp"
-    "int int int int int int"
+    "int int int int int int";
   }
 
   .skills{
@@ -836,7 +855,7 @@ header .social .btn {
     background-color: #838485;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
     transform :translateX(100%);
     transition: transform 0.5s ease-in;
   }

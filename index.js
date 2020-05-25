@@ -58,3 +58,15 @@ function csPage(){
 function osuPage(){
   window.location = "https://osu.ppy.sh/users/9052731";
 }
+
+function sgatePage(){
+  window.location = "https://myanimelist.net/anime/9253/Steins_Gate";
+}
+
+function kgatariPage(){
+  window.location = "https://myanimelist.net/anime/6594/Katanagatari";
+}
+
+function oregairuPage(){
+  window.location = "https://myanimelist.net/anime/14813/Yahari_Ore_no_Seishun_Love_Comedy_wa_Machigatteiru";
+}
