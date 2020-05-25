@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /*
 Image Links :
@@ -13,8 +16,10 @@ longwave : https://carolineashwood.co.uk/products/catch-the-wavesoriginal-abstra
 
 
 body{
-  margin: 0;
+  height:100%;
+  margin: 0px;
   margin-bottom: 10%;
+
 }
 
 button{
@@ -27,6 +32,8 @@ button{
   padding-top: 5%;
   flex : 1 1 80%;
   height: 100vh;
+  margin-bottom: 20%;
+  opacity: 0;
 }
 
 .unselectable {
@@ -35,6 +42,221 @@ button{
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
+}
+
+.skills-information{
+  width:65%;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  background-color: #0097bd;
+  padding: 20px;
+  color:white;
+  opacity: 0;
+}
+
+.exp-content{
+  margin-top: 50px;
+}
+
+.exp-showcase{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows:minmax(200px, auto);
+  grid-gap: 3%;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-top: 1%;
+  position: relative;
+}
+
+.exp-showcase-title{
+  text-align: left;
+  margin-left: 17.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.exp-text-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+
+.exp-text{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+.exp1{
+  background-image: url("images/vn.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  transition: all ease-in-out 450ms;
+}
+
+.exp1:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.exp2{
+  background-image: url("images/steamvr.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.3;
+  transition: all ease-in-out 450ms;
+}
+
+.exp2:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.exp3{
+  background-image: url("images/hwhelp.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.3;
+  transition: all ease-in-out 450ms;
+}
+
+.exp3:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.exp4{
+  background-image: url("images/discord.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  transition: all ease-in-out 450ms;
+}
+
+.exp4:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.exp5{
+  background-image: url("images/github.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  transition: all ease-in-out 450ms;
+}
+
+.exp5:hover{
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.skills-title{
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.skills-content{
+  margin-top: 50px;
+}
+
+.skill-title{
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows:minmax(200px, auto);
+  grid-gap: 20px;
+  max-width: 65%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-item{
+  background: white;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-family : 'Open Sans', sans-serif;
+}
+
+.skill1{
+  opacity: 0.1;
+  background-image: url("https://img-a.udemycdn.com/course/750x422/792484_cc98_3.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 450ms;
+}
+
+.skill1:hover{
+  opacity: 1;
+}
+
+.skill2{
+  opacity: 0.1;
+  background-image: url("https://tingsyuanwang.github.io/blogs/images/javascript.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 450ms;
+}
+
+.skill2:hover{
+  opacity: 1;
+}
+
+.skill3{
+  opacity: 0.1;
+  background-image: url("https://1.bp.blogspot.com/-GTwjVoB9EQo/WJNRV4ZFlCI/AAAAAAAAXIQ/JnQzJORM-2EOu483COrGz_1hi98e3XwpQCPcB/s1600/unity.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 450ms;
+}
+
+.skill3:hover{
+  opacity: 1;
+}
+
+.skill4{
+  opacity: 0.1;
+  background-image: url("https://upload.wikimedia.org/wikipedia/zh/8/88/Java_logo.png");
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 450ms;
+}
+
+.skill4:hover{
+  opacity: 1;
+}
+
+.skill5{
+  opacity: 0.1;
+  background-image: url("https://fontmeme.com/images/Python-Logo.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all ease-in-out 450ms;
+}
+
+.skill5:hover{
+  opacity: 1;
 }
 
 .portfolio{
@@ -144,6 +366,7 @@ nav{
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .nav-links{
@@ -163,11 +386,12 @@ nav{
 }
 
 .who-section{
+  opacity: 0;
   text-align: center;
   margin-top: 5%;
-  margin-right:10%;
-  margin-left: 10%;
-  width: 80%;
+  margin-right:15%;
+  margin-left: 15%;
+  width: 70%;
   height: 20%;
   /* background-color: red; */
   font-family: 'Open Sans', sans-serif;
@@ -278,6 +502,11 @@ Link : https://codepen.io/itbruno/pen/KwarLp */
 
 
 @import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+.timeline-content{
+  font-family: 'Raleway', sans-serif;
+}
+
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
   content: '';
   display: block;
@@ -291,9 +520,6 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
   -moz-box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
 
 img {
   max-width: 100%;
@@ -359,7 +585,7 @@ header .social .btn {
 #timeline:before {
   content: "";
   width: 3px;
-  height: 100%;
+  height: 74%;
   /* TimeLine Middle Line */
   background: #008bc2;
   left: 50%;
@@ -506,3 +732,7 @@ header .social .btn {
 
 
 /* Imported Timeline (End) */
+
+.main{
+  opacity: 0;
+}

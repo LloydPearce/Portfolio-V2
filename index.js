@@ -9,15 +9,15 @@ function goEd(){
 }
 
 function goExp(){
-  window.location = "";
+  window.location = "exp.html";
 }
 
 function goSkills(){
-  window.location = "";
+  window.location = "skills.html";
 }
 
 function goInt(){
-  window.location = "";
+  window.location = "int.html";
 }
 
 // Index Page (End)
@@ -25,3 +25,12 @@ function goInt(){
 function goHome(){
   window.location = "index.html";
 }
+
+
+$(".main-content").delay(800).animate({"opacity": "1"}, 700);
+
+$(".who-section").delay(800).animate({"opacity": "1"}, 700);
+
+$(".main").delay(800).animate({"opacity": "1"}, 700);
+
+$(".skills-information").delay(800).animate({"opacity": "1"}, 700);
