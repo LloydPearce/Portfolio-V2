@@ -26,20 +26,35 @@ function goHome(){
   window.location = "index.html";
 }
 
+// Navigation Bar responsiveness / animations
 const navSlide = () =>{
   const smallNav = document.querySelector(".smallNav");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
 
+  // On click, display the smallNav
   smallNav.addEventListener("click", ()=>{
     nav.classList.toggle("nav-active");
   });
 
+  // Trigger animation
   navLinks.forEach((link, index)=>{
     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+2}s`;
   });
 }
-
 navSlide();
 
 $(".main-content").delay(800).animate({"opacity": "1"}, 700);
+
+// Onclick functions in int.html
+function lolPage(){
+  window.location = "https://lol.moa.tw/summoner/show/LloydPearce";
+}
+
+function csPage(){
+  window.location = "https://csgo-stats.com/player/76561198230231288";
+}
+
+function osuPage(){
+  window.location = "https://osu.ppy.sh/users/9052731";
+}
